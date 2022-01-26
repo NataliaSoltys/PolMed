@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" sizes="96x96" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Polmed</title>
+
+
+    <link rel="stylesheet" href="css/third.css">
+
+    <script>
+        var b = localStorage.getItem("myValue");
+        var cel = localStorage.getItem("cel");
+        var termin = localStorage.getItem("termin");
+        var cena = localStorage.getItem("koszt");
+        document.getElementById("demo28").innerHTML = b;
+        document.getElementById("celWizyty").innerHTML = cel;
+        document.getElementById("termin").innerHTML = termin;
+        document.getElementById("cena").innerHTML = cena;
+    </script>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div display: flex;>
+
+            <a class="logo" href="index.html"><img src="images/logoGraphics.jpg"></img>Pol<span>med</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="index.html">Strona domowa</a></li>
+                    <li><a href="javascript:scroll(0,1650);">Umów wizytę</a></li>
+                    <li><a href="javascript:scroll(0,692);">Nasze usługi</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="javascript:scroll(0,2450);">Kontakt</a></li>
+                    <li class="go-premium-cta"><a href="#">Twoje konto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="headlineList">
+        <h2>Potwierdzenie </br> wizyty </h2>
+    </div>
+
+    <div class="summary-section">
+        <ul>
+            <li>
+                <h3>Wybrany lekarz:<p id="demo28"></p>
+                </h3><br />
+                <h3>Wybrany termin:<p id="termin"></p>
+                </h3><br />
+                <h3>Cel wizyty:<p id="celWizyty"></p>
+                </h3><br />
+                <h3>Cena:<p id="cena"></p>
+                </h3><br />
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="cancellation">
+        <h4>Aby anulować wizytę kliknij przycisk poniżej</h4>
+        <button>Anuluj wizytę</button>
+    </div>
+
+
+
+    <script>
+        document.getElementById("demo28").innerHTML = b;
+        document.getElementById("celWizyty").innerHTML = cel;
+        document.getElementById("termin").innerHTML = termin;
+        document.getElementById("cena").innerHTML = cena;
+    </script>
+
+
+</body>
+
+</html>

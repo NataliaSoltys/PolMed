@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polmed</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            
+            <a class="logo" href="#"><img src="images/logoGraphics.jpg"></img>Pol<span>med</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Strona domowa</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Profilaktyka</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Kontakt</a></li>
+                    <li class="go-premium-cta"><a href="#">Twoje konto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Dbamy o Twoje zdrowie</p>
+                <h1>Przychodnie Polmed</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Zarejstruj się</a>
+                   
+                </div>
+            </div>
+
+            <img src="images/illustration.png" class="hero-img" alt="Illustration">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2>Nasze usługi</h2>
+            <ul class="features-list">
+                <li>Podstawowe opieka zdrowotna</li>
+                <li>Diagnostyka USG</li>
+                <li>Rehabilitacja</li>
+                <li>Badania labolatoryjne</li>
+                <li>Hipoterapia</li>
+                <li>Opieka zdrowia psychicznego</li>
+            </ul>
+
+            <img src="images/health.jpg" alt="Zdrowie">
+        </div>
+    </section>
+    
+    
+    <div class="headlineList">
+        <h2>Dostępne </br> wizyty</h2>
+    </div>
+
+    
+    <section class="testimonials-section">
+        <div class="container">
+            
+            <ul>
+                <li>
+                    <img src="images/person1.jpg" alt="Person">
+                    <h4>lek. Anna Dzikowska</h4>
+                    <p>pediatra</br></br> dostępne wizyty w tym tygodniu</p>
+                     </br>
+                    <button class="button-17" role="button">Umów wizytę</button>
+                </li>
+                <li>
+                    <img src="images/person2.jpg" alt="Person">
+                    <h4>lek. Piotr Opolski</h4>
+                    <p>pediatra</br></br> dostępne wizyty w tym tygodniu</p>
+                     </br>
+                    <button class="button-17" role="button">Umów wizytę</button>
+                </li>
+                <li>
+                    <img src="images/person3.jpg" alt="Person">
+                    <h4>lek. Janusz Kłaj</h4>
+                    <p>lekarz rodzinny</br></br> dostępne wizyty w tym tygodniu</p>
+                     </br>
+                    <button class="button-17" role="button">Umów wizytę</button>
+                </li>
+                <li>
+                    <img src="images/person4.jpg" alt="Person">
+                    <h4>lek. Anna Nowak</h4>
+                    <p>lekarz rodzinny</br></br>brak dostępnych wizyt w tym tygodniu</p>
+                     </br>
+                    <button class="button-17" role="button"> U̶m̶ó̶w̶ ̶w̶i̶z̶y̶t̶ę̶</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Kontakt</h2>
+
+                <form action="">
+                    <label for="name">Imię</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Wiadomość</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Wyślij wiadomość">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10244.631848710927!2d19.94417126925049!3d50.06460330000029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1bcd0ea680d312d4!2sPOLMED!5e0!3m2!1sen!2spl!4v1642074494988!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+</html>

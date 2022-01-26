@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" sizes="96x96" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Polmed</title>
+
+
+    <link rel="stylesheet" href="css/second.css">
+    <script>
+
+        function valuesSender(date, couse, price) {
+            localStorage.setItem("termin", date);
+            localStorage.setItem("cel", couse);
+            localStorage.setItem("koszt", price);
+            window.location.href = "page3.html";
+        }
+
+        var b = localStorage.getItem("myValue");
+        document.getElementById("demo28").innerHTML = b;
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="logo" href="index.html"><img src="images/logoGraphics.jpg"></img>Pol<span>med</span></a>
+
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+            <ul class="primary-nav">
+                <li class="current"><a href="index.html">Strona domowa</a></li>
+                <li><a href="javascript:scroll(0,1650);">Umów wizytę</a></li>
+                <li><a href="javascript:scroll(0,692);">Nasze usługi</a></li>
+            </ul>
+
+            <ul class="secondary-nav">
+                <li><a href="javascript:scroll(0,2450);">Kontakt</a></li>
+                <li class="go-premium-cta"><a href="#">Twoje konto</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="headlineList">
+        <h2>Dostępne </br> terminy </h2>
+        <p id="demo28"></p>
+    </div>
+
+
+    <section class="testimonials-section">
+        <div display: flex;>
+
+            <ul>
+
+                <li>
+                    <h2>Poniedziałek</h2>
+                    <h5>24.01.2022</h5>
+
+                    <a href="#demo" class="button-17" data-toggle="collapse">13.45</a>
+                    <div id="demo" class="collapse">
+                        <button class="button-18" role="button" onclick="valuesSender('poniedziałek 24.01.2022r. godz. 13.45', 'wypisanie recepty', '30 zł')">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button" onclick="valuesSender('poniedziałek 24.01.2022r. godz. 13.45', 'wizyta kontrolna', '50 zł')">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('poniedziałek 24.01.2022r. godz. 13.45', 'konsultacja', '100 zł')">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('poniedziałek 24.01.2022r. godz. 13.45', 'szczepienie', '500 zł')">Szczepienie <br /> 500 zł</button>
+                    </div>
+
+                    <br/><br/>
+
+                    <a href="#demo2" class="button-17" data-toggle="collapse"> ̶1̶5̶.̶3̶0̶</a>
+                    <!-- <div id="demo2" class="collapse">
+                        <button class="button-18" role="button">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button">Szczepienie <br /> 500 zł</button>
+                    </div> -->
+                </li>
+                <li>
+                    <h2>Wtorek</h2>
+                    <h5>25.01.2022</h5>
+                    <a href="#demo3" class="button-17" data-toggle="collapse"> ̶1̶3̶.̶4̶5̶</a>
+                    <!-- <div id="demo3" class="collapse">
+                        <button class="button-18" role="button">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button">Szczepienie <br /> 500 zł</button>
+                    </div> -->
+                    <br /><br />
+                    <a href="#demo4" class="button-17" data-toggle="collapse">15.30</a>
+                    <div id="demo4" class="collapse">
+                        <button class="button-18" role="button" onclick="valuesSender('wtorek 25.01.2022r. godz. 15.30', 'wypisanie recepty', '30 zł')">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button" onclick="valuesSender('wtorek 25.01.2022r. godz. 15.30', 'wizyta kontrolna', '50 zł')">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('wtorek 25.01.2022r. godz. 15.30', 'konsultacja', '100 zł')">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('wtorek 25.01.2022r. godz. 15.30', 'szczepienie', '500 zł')">Szczepienie <br /> 500 zł</button>
+                    </div>
+                </li>
+                <li>
+                    <h2>Środa</h2>
+                    <h5>26.01.2022</h5>
+                    <a href="#demo5" class="button-17" data-toggle="collapse">13.45</a>
+                    <div id="demo5" class="collapse">
+                        <button class="button-18" role="button" onclick="valuesSender('środa 26.01.2022r. godz. 13.45', 'wypisanie recepty', '30 zł')">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button" onclick="valuesSender('środa 26.01.2022r. godz. 13.45', 'wizyta kontrolna', '50 zł')">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('środa 26.01.2022r. godz. 13.45', 'konsultacja', '100 zł')">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('środa 26.01.2022r. godz. 13.45', 'szczepienie', '500 zł')">Szczepienie <br /> 500 zł</button>
+                    </div>
+                    <br /><br />
+                    <a href="#demo6" class="button-17" data-toggle="collapse"> ̶1̶5̶.̶3̶0̶</a>
+                    <!-- <div id="demo6" class="collapse">
+                        <button class="button-18" role="button">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button">Szczepienie <br /> 500 zł</button>
+                    </div> -->
+                </li>
+                <li>
+                    <h2>Czwartek</h2>
+                    <h5>27.01.2022</h5>
+                    <a href="#demo7" class="button-17" data-toggle="collapse">13.45</a>
+                    <div id="demo7" class="collapse">
+                        <button class="button-18" role="button" onclick="valuesSender('czwartek 27.01.2022r. godz. 13.45', 'wypisanie recepty', '30 zł')">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button" onclick="valuesSender('czwartek 27.01.2022r. godz. 13.45', 'wizyta kontrolna', '50 zł')">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('czwartek 27.01.2022r. godz. 13.45', 'konsultacja', '100 zł')">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('czwartek 27.01.2022r. godz. 13.45', 'szczepienie', '500 zł')">Szczepienie <br /> 500 zł</button>
+                    </div>
+                    <br /><br />
+                    <a href="#demo8" class="button-17" data-toggle="collapse">15.30</a>
+                    <div id="demo8" class="collapse">
+                        <button class="button-18" role="button" onclick="valuesSender('czwartek 27.01.2022r. godz. 15.30', 'wypisanie recepty', '30 zł')">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button" onclick="valuesSender('czwartek 27.01.2022r. godz. 15.30', 'wizyta kontrolna', '50 zł')">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('czwartek 27.01.2022r. godz. 15.30', 'konsultacja', '100 zł')">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('czwartek 27.01.2022r. godz. 15.30', 'szczepienie', '500 zł')">Szczepienie <br /> 500 zł</button>
+                    </div>
+                </li>
+                <li>
+                    <h2>Piątek</h2>
+                    <h5>28.01.2022</h5>
+                    <a href="#demo9" class="button-17" data-toggle="collapse">13.45</a>
+                    <div id="demo9" class="collapse">
+                        <button class="button-18" role="button" onclick="valuesSender('piątek 28.01.2022r. godz. 13.45', 'wypisanie recepty', '30 zł')">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button" onclick="valuesSender('piątek 28.01.2022r. godz. 13.45', 'wizyta kontrolna', '50 zł')">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('piątek 28.01.2022r. godz. 13.45', 'konsultacja', '100 zł')">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('piątek 28.01.2022r. godz. 13.45', 'szczepienie', '500 zł')">Szczepienie <br /> 500 zł</button>
+                    </div>
+                    <br /><br />
+                    <a href="#demo10" class="button-17" data-toggle="collapse">15.30</a>
+                    <div id="demo10" class="collapse">
+                        <button class="button-18" role="button" onclick="valuesSender('piątek 28.01.2022r. godz. 15.30', 'wypisanie recepty', '30 zł')">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button" onclick="valuesSender('piątek 28.01.2022r. godz. 15.30', 'wizyta kontrolna', '50 zł')">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('piątek 28.01.2022r. godz. 15.30', 'konsultacja', '100 zł')">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button" onclick="valuesSender('piątek 28.01.2022r. godz. 15.30', 'szczepienie', '500 zł')">Szczepienie <br /> 500 zł</button>
+                    </div>
+                </li>
+                <li>
+                    <h2>Sobota</h2>
+                    <h5>29.01.2022</h5>
+                    <a href="#demo11" class="button-17" data-toggle="collapse"> ̶1̶3̶.̶4̶5̶</a>
+                    <!-- <div id="demo11" class="collapse">
+                        <button class="button-18" role="button">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button">Szczepienie <br /> 500 zł</button>
+                    </div> -->
+                    <br /><br />
+                    <a href="#demo12" class="button-17" data-toggle="collapse"> ̶1̶5̶.̶3̶0̶</a>
+                    <!-- <div id="demo12" class="collapse">
+                        <button class="button-18" role="button">Wypisanie recepty <br /> 30 zł</button>
+                        <button class="button-18" role="button">Wizyta kontrolna <br /> 50 zł</button><br />
+                        <button class="button-18" role="button">Konsultacja <br /> 100 zł</button><br />
+                        <button class="button-18" role="button">Szczepienie <br /> 500 zł</button>
+                    </div> -->
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Kontakt</h2>
+
+                <form action="">
+                    <label for="name">Imię</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Wiadomość</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Wyślij wiadomość">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10244.631848710927!2d19.94417126925049!3d50.06460330000029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1bcd0ea680d312d4!2sPOLMED!5e0!3m2!1sen!2spl!4v1642074494988!5m2!1sen!2spl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById("demo28").innerHTML = b;
+    </script>
+
+
+
+</body>
+
+</html>
